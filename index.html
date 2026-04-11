@@ -363,16 +363,30 @@
 
   /* FINALS */
   #finals { background:rgba(10,28,62,0.12); padding-bottom:50px; }
-  .finals-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:14px; }
-  .finals-card {
-    background:linear-gradient(135deg,rgba(195,154,41,0.07) 0%,rgba(10,24,52,0.15) 100%);
-    border:1px solid rgba(195,154,41,0.16);
-    border-radius:12px; padding:28px 26px;
-    transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;
+  .finals-steps { display:flex; flex-direction:column; gap:0; max-width:720px; margin:0 auto; }
+  .finals-step {
+    display:grid; grid-template-columns:80px 1fr;
+    gap:28px; align-items:start;
+    padding:32px 0;
+    border-bottom:1px solid rgba(195,154,41,0.1);
   }
-  .finals-card:hover { transform:translateY(-3px); border-color:rgba(212,170,58,0.4); box-shadow:0 8px 32px rgba(195,154,41,0.12); }
-  .finals-card h3 { font-family:'Cormorant Garamond',serif; font-size:1.22rem; font-weight:600; color:var(--ice); margin-bottom:9px; }
-  .finals-card p { font-size:0.88rem; line-height:1.75; color:rgba(240,228,176,0.58); }
+  .finals-step:last-child { border-bottom:none; }
+  .finals-step-num {
+    font-family:'Cormorant Garamond',serif;
+    font-size:3.2rem; font-weight:700; line-height:1;
+    background:linear-gradient(135deg,#c8a84b,#f0d97a);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    opacity:0.7; text-align:center; padding-top:4px;
+  }
+  .finals-step-body .badge { margin-bottom:10px; }
+  .finals-step-body h3 { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:600; color:var(--ice); margin-bottom:8px; }
+  .finals-step-body p { font-size:0.9rem; line-height:1.78; color:rgba(240,228,176,0.62); }
+  .finals-step-body p strong { color:var(--ice); }
+  .finals-step-body p a { color:var(--bright); }
+  @media(max-width:500px) {
+    .finals-step { grid-template-columns:48px 1fr; gap:16px; }
+    .finals-step-num { font-size:2.2rem; }
+  }
   .badge {
     display:inline-block;
     background:rgba(195,154,41,0.14); border:1px solid rgba(195,154,41,0.28);
@@ -734,30 +748,38 @@
     <div class="section-label">The Final Round</div>
     <h2 class="section-title">Finals Format</h2>
     <div class="divider"></div>
-    <div class="finals-grid">
-      <div class="finals-card">
-        <div class="card-icon">🎯</div>
-        <div class="badge">Qualification</div>
-        <h3>How You Get There</h3>
-        <p>The top team from each panel advances to finals. Only one team per panel moves on, so make your panel presentation count.</p>
+    <div class="finals-steps">
+      <div class="finals-step">
+        <div class="finals-step-num">01</div>
+        <div class="finals-step-body">
+          <div class="badge">Qualification</div>
+          <h3>How You Get There</h3>
+          <p>The top team from each panel advances to finals. Only one team per panel moves on, so make your panel presentation count.</p>
+        </div>
       </div>
-      <div class="finals-card">
-        <div class="card-icon">⚡</div>
-        <div class="badge">Format</div>
-        <h3>Curveball Questions</h3>
-        <p><strong>Finals consist of answering 2 curveball questions.</strong> Each poses a real-world business scenario (a competitor's move, a product failure, a market shift) and asks for your team's response.</p>
+      <div class="finals-step">
+        <div class="finals-step-num">02</div>
+        <div class="finals-step-body">
+          <div class="badge">Format</div>
+          <h3>Curveball Questions</h3>
+          <p><strong>Finals consist of answering 2 curveball questions.</strong> Each poses a real-world business scenario — a competitor's move, a product failure, a market shift — and asks for your team's response.</p>
+        </div>
       </div>
-      <div class="finals-card">
-        <div class="card-icon">⏱️</div>
-        <div class="badge">Timing</div>
-        <h3>4 Minutes Per Question</h3>
-        <p>Each team gets approximately 4 minutes total to <em>prep and answer</em> each question. Judges expect detailed, well-reasoned responses, so think fast and speak clearly.</p>
+      <div class="finals-step">
+        <div class="finals-step-num">03</div>
+        <div class="finals-step-body">
+          <div class="badge">Timing</div>
+          <h3>4 Minutes Per Question</h3>
+          <p>Each team gets approximately 4 minutes total to prep and answer each question. Judges expect detailed, well-reasoned responses, so think fast and speak clearly.</p>
+        </div>
       </div>
-      <div class="finals-card">
-        <div class="card-icon">🧠</div>
-        <div class="badge">Strategy</div>
-        <h3>Know the Pool</h3>
-        <p>You won't know which two questions you'll face until the day of finals. All four possible questions are listed in the <a href="#curveballs" style="color:var(--bright);">Curveball Questions</a> section below, so prepare answers for all of them.</p>
+      <div class="finals-step">
+        <div class="finals-step-num">04</div>
+        <div class="finals-step-body">
+          <div class="badge">Strategy</div>
+          <h3>Know the Pool</h3>
+          <p>You won't know which two questions you'll face until the day of finals. All four possible questions are listed in the <a href="#curveballs">Curveball Questions</a> section below, so prepare answers for all of them.</p>
+        </div>
       </div>
     </div>
     <div class="curveball-note">
