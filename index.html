@@ -186,6 +186,33 @@
     margin-top:40px; display:flex; gap:14px; flex-wrap:wrap; justify-content:center;
     animation:fadeUp 0.9s 0.3s ease both;
   }
+  .hero-event-details {
+    display:flex; gap:32px; flex-wrap:wrap; justify-content:center; align-items:center;
+    margin-top:36px;
+    animation:fadeUp 0.9s 0.4s ease both;
+  }
+  .hero-event-details .detail-item {
+    display:flex; flex-direction:column; align-items:center; gap:4px;
+  }
+  .hero-event-details .detail-label {
+    font-size:0.62rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase;
+    color:rgba(212,170,58,0.55);
+  }
+  .hero-event-details .detail-value {
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(1.15rem,2.5vw,1.55rem);
+    font-weight:700; letter-spacing:0.03em;
+    background:linear-gradient(135deg,#c8a84b,#f0d97a,#c8a84b);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    filter:drop-shadow(0 0 10px rgba(200,168,75,0.45));
+  }
+  .hero-event-details .detail-divider {
+    width:1px; height:36px; background:rgba(200,168,75,0.25);
+  }
+  @media(max-width:600px) {
+    .hero-event-details { gap:20px; }
+    .hero-event-details .detail-divider { display:none; }
+  }
   @keyframes fadeUp {
     from { opacity:0; transform:translateY(24px); }
     to   { opacity:1; transform:translateY(0); }
@@ -580,6 +607,22 @@
   <div class="hero-cta">
     <a href="#register" class="btn-primary">Register Now</a>
     <a href="#details" class="btn-ghost">View Details</a>
+  </div>
+  <div class="hero-event-details">
+    <div class="detail-item">
+      <div class="detail-label">Date</div>
+      <div class="detail-value">May 7th</div>
+    </div>
+    <div class="detail-divider"></div>
+    <div class="detail-item">
+      <div class="detail-label">Location</div>
+      <div class="detail-value">Willow Canyon Cafeteria</div>
+    </div>
+    <div class="detail-divider"></div>
+    <div class="detail-item">
+      <div class="detail-label">Est. Time</div>
+      <div class="detail-value">12:10 – 3:00</div>
+    </div>
   </div>
 </div>
 
