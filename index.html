@@ -335,6 +335,32 @@
   .tl-content ul li { font-size:0.91rem; line-height:1.65; color:rgba(240,228,176,0.62); }
   .tl-content ul li strong { color:var(--ice); font-weight:600; }
 
+  /* ADVANCE */
+  #advance { background:rgba(10,18,40,0.3); }
+  .criteria-intro { font-size:1rem; color:rgba(240,228,176,0.62); margin-bottom:32px; line-height:1.75; }
+  .criteria-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .criteria-card {
+    background:linear-gradient(135deg,rgba(195,154,41,0.07) 0%,rgba(10,24,52,0.15) 100%);
+    border:1px solid rgba(195,154,41,0.16);
+    border-radius:12px; padding:28px 26px;
+    position:relative; overflow:hidden;
+    transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;
+  }
+  .criteria-card::before {
+    content:''; position:absolute; top:0; left:-100%;
+    width:100%; height:100%;
+    background:linear-gradient(110deg,transparent 35%,rgba(212,170,58,0.12) 50%,transparent 65%);
+    transition:left 0.7s ease; pointer-events:none;
+  }
+  .criteria-card:hover::before { left:100%; }
+  .criteria-card:hover { transform:translateY(-3px); border-color:rgba(212,170,58,0.4); box-shadow:0 8px 32px rgba(195,154,41,0.12); }
+  .criteria-card > * { position:relative; z-index:1; }
+  .criteria-card .card-icon { font-size:1.6rem; margin-bottom:10px; display:inline-block; transition:transform 0.3s; }
+  .criteria-card:hover .card-icon { transform:scale(1.15) rotate(-4deg); }
+  .criteria-card h3 { font-family:'Cormorant Garamond',serif; font-size:1.22rem; font-weight:600; color:var(--ice); margin-bottom:9px; }
+  .criteria-card p { font-size:0.9rem; line-height:1.75; color:rgba(240,228,176,0.62); }
+  @media(max-width:600px) { .criteria-grid { grid-template-columns:1fr; } }
+
   /* FINALS */
   #finals { background:rgba(10,28,62,0.12); padding-bottom:50px; }
   .finals-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:14px; }
@@ -676,6 +702,42 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ADVANCE TO FINALS -->
+<section id="advance">
+  <div class="container">
+    <div class="section-label">Judging Criteria</div>
+    <h2 class="section-title">How Do I Advance to Finals?</h2>
+    <div class="divider"></div>
+    <p class="criteria-intro">Judges are looking for a product that is:</p>
+    <div class="criteria-grid">
+      <div class="criteria-card">
+        <div class="card-icon">⚙️</div>
+        <div class="badge">Realistic</div>
+        <h3>Realistic</h3>
+        <p>Create a product that is scaleable in mass production, a suitable and practical solution to its targeted problem, and doesn't use magic technology.</p>
+      </div>
+      <div class="criteria-card">
+        <div class="card-icon">🎯</div>
+        <div class="badge">Problem-Solving</div>
+        <h3>Problem-Solving</h3>
+        <p>Your product should effectively solve a real-world problem that is widespread and significant.</p>
+      </div>
+      <div class="criteria-card">
+        <div class="card-icon">💡</div>
+        <div class="badge">Creative</div>
+        <h3>Creative</h3>
+        <p>Your product must be original and should be accompanied by a visually appealing, eloquent, and clear presentation.</p>
+      </div>
+      <div class="criteria-card">
+        <div class="card-icon">📈</div>
+        <div class="badge">Profitable</div>
+        <h3>Profitable</h3>
+        <p>Ensure that your product doesn't use materials that are too expensive for your level of production. For instance, if you wanted to mass produce your product, it is probably not the best idea to use large amounts of high-value precious metals in each unit. Production costs like this can absolutely eat into profits.</p>
+      </div>
     </div>
   </div>
 </section>
