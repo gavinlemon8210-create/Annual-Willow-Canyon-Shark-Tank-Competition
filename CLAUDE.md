@@ -28,17 +28,17 @@ Card hover effects use a gold shimmer sweep (`::before` pseudo-element). Section
 4. **Judging Criteria** (`#advance`) — four criteria cards (Realistic, Problem-Solving, Creative, Profitable) + link to full rubric. "Finals" nav link points here.
 5. **Finals Format** (`#finals`) — numbered editorial steps (01–04)
 6. **Curveball Questions** (`#curveballs`) — four possible finals questions
-7. **Competition Prizes** (`#prizes`) — Chick-fil-A, Raising Cane's, Starbucks sponsor cards with logos
+7. **Competition Prizes** (`#prizes`) — Chick-fil-A, Raising Cane's, Starbucks, Texas Roadhouse sponsor cards with logos
 8. **Register** (`#register`) — registration form
 9. **Contact** (`#contact`)
 
 ## Competition Details
 - **Date:** May 7th
 - **Location:** Willow Canyon Cafeteria
-- **Est. Time:** 12:10 – 3:00
-- **Format:** Teams of students present a 3–5 slide pitch (4 min presentation + 2 min Q&A). Top team per panel advances to finals.
+- **Est. Time:** 12:30 – 3:15
+- **Format:** Teams of students present a 4–6 slide pitch (4 min presentation + 2 min Q&A). Top team per panel advances to finals.
 - **Finals:** Teams answer 2 of 4 possible curveball questions, ~4 minutes each.
-- **Prizes:** Gift card prize pool from Chick-fil-A, Raising Cane's, and Starbucks — 1st, 2nd, and 3rd place pick from the pool.
+- **Prizes:** Gift card prize pool from Chick-fil-A, Raising Cane's ($200), Starbucks, and Texas Roadhouse (~$100) — 1st, 2nd, and 3rd place pick from the pool.
 
 ## Slideshow Requirements (qualifier)
 Student presentations must cover:
@@ -54,6 +54,7 @@ Stored in `/images/`:
 - `chick-fil-a-logo.png`
 - `raising-canes-logo.png`
 - `starbucks-logo.png`
+- `texas-roadhouse-logo.png`
 
 ## Deployment
 Push to `main` → GitHub Pages builds and serves automatically. No CI, no build pipeline. Changes are live within ~1 minute of push.
