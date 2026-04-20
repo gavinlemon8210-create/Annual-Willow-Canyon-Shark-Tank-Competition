@@ -37,7 +37,7 @@ Card hover effects use a gold shimmer sweep (`::before` pseudo-element). Section
 - **Location:** Willow Canyon Cafeteria
 - **Est. Time:** 12:30 – 3:15
 - **Format:** Teams of students present a 4–6 slide pitch (4 min presentation + 2 min Q&A). Top team per panel advances to finals.
-- **Finals:** Teams answer 2 of 4 possible curveball questions, ~4 minutes each.
+- **Finals:** Teams answer 2 of 4 possible curveball questions, ~3 minutes each.
 - **Prizes:** Gift card prize pool from Chick-fil-A, Raising Cane's ($200), Starbucks, and Texas Roadhouse (~$100) — 1st, 2nd, and 3rd place pick from the pool.
 
 ## Slideshow Requirements (qualifier)
