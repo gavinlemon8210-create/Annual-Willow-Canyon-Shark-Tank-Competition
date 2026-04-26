@@ -71,10 +71,10 @@ Push to `main` → GitHub Pages builds and serves automatically. No CI, no build
 
 The rubric was updated to focus on **creativity, problem-solving, and target market** — profitability and production costs are **not** a standalone judging category. The site should emphasize creativity and presentation skills, which carry the most weight. Do not re-introduce profitability/cost emphasis.
 
-### Qualifier Rubric (67 pts total)
+### Qualifier Rubric (62 pts total)
 
-**1. Creativity (30 pts) — Highest weighted category (~45% of total score)**
-- a. Originality (10 pts): Copycat (0–3 pts) | Similar to existing products (4–6 pts) | Completely unique/novel concept (7–10 pts)
+**1. Creativity (25 pts) — tied with Problem-Solving as highest weighted**
+- a. Originality (5 pts): Copycat (0–2 pts) | Similar to existing products (3–4 pts) | Completely unique/novel concept (5 pts)
 - b. Presentation Clarity/Features (10 pts): Confusing, barely conveys product (0–3 pts) | Mostly clear, lacks delivery (4–7 pts) | Concise, memorable, clear pitch (8–10 pts)
 - c. Visual Representation (10 pts): Not present in pitch deck (0 pts) | Present in pitch deck (10 pts) — **binary, easy points**
 
@@ -88,13 +88,13 @@ The rubric was updated to focus on **creativity, problem-solving, and target mar
 
 **Qualifier Tie Breakers:** 1st — Higher presentation clarity score | 2nd — Higher problem-solving score | 3rd — Majority judge vote
 
-### Finals Rubric (33 pts total)
+### Finals Rubric (38 pts total)
 
 **1. Solution Quality and Realism (12 pts):** Poor/unrealistic (0–3) | Realistic but not most efficient (4–8) | Realistic and most efficient (9–12)
 
-**2. Depth/Defense of Reasoning (11 pts):** Shallow/vague, poorly defended (0–4) | Decent, not optimal (5–7) | Optimal, well-defended (8–11)
+**2. Depth/Defense of Reasoning (12 pts):** Shallow/vague, poorly defended (0–4) | Decent, not optimal (5–7) | Optimal, well-defended (8–11)
 
-**3. Clarity and Presentation of Solution (10 pts):** Poorly presented (0–3) | Presented well, some parts unclear (4–6) | Clear and eloquent (7–10)
+**3. Clarity and Presentation of Solution (14 pts):** Poorly presented (0–4) | Presented well, some parts unclear (6–12) | Clear and eloquent (13–14)
 
 **Finals Tie Breakers:** 1st — Higher total finals score | 2nd — Higher Solution Quality score | 3rd — Higher Depth/Defense score | 4th — Higher Clarity score | Final — Majority judge vote
 
